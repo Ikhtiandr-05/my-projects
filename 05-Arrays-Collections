@@ -1,0 +1,84 @@
+ЗАДАНИЕ 8: Работа с массивами и списками
+1. Создайте массив ваших любимых фильмов и отобразите их
+2. Создайте список оценок студентов и вычислите средний балл
+3. Попросите пользователя ввести 5 чисел, сохраните в массив, найдите наибольшее
+4. Создайте список покупок (List<string>) с функцией добавления/удаления
+5. Создайте простую телефонную книгу, используя массивы (имена и номера телефонов)
+*/
+
+// Задание 1
+
+/*
+string[] film = {"Король свободных практиков", "Рубеж Шангри-Ла", "Повелитель", "Целитель, которого исключили из группы, оказался сильнейшим!", "Самый известный диктор создаёт самый великий в мире клан", "Безупречный мир", "Лунное путешествие приведёт к новому миру", "Перерождение в аристократа со способностью анализа", "Неправильный способ использования исцеляющей магии", "Добро пожаловать в класс превосходства", "Нежеланно бессмертный авантюрист", "Другой мир не может противостоять силе мгновенной смерти", "Раб спецотряда демонического города"};
+
+for (int i = 0; i < film.Length; i++)
+{
+  Console.WriteLine(film[i]);
+
+}
+*/
+
+// Задание 2
+
+/*
+List<double> marks_of_strudent = new List<double>();
+marks_of_strudent.Add(85);
+marks_of_strudent.Add(95);
+marks_of_strudent.Add(100);
+marks_of_strudent.Add(75);
+marks_of_strudent.Add(65);
+marks_of_strudent.Add(99);
+marks_of_strudent.Add(98);
+marks_of_strudent.Add(80);
+marks_of_strudent.Add(79);
+marks_of_strudent.Add(88);
+
+double summ = 0;
+           
+
+
+
+for (int i = 0; i < marks_of_strudent.Count; i++)
+{
+
+    summ += marks_of_strudent[i];
+                    
+}
+    double srednee = summ / marks_of_strudent.Count;
+
+Console.WriteLine("Средний балл студентов: " + srednee);
+
+*/
+
+// Задание 3
+/*
+  double[] numbers = new double[5];
+  Console.WriteLine("Введите 5 чисел:");
+
+  for (int i = 0; i < numbers.Length; i++)
+  {
+      Console.Write($"Число {i + 1}: ");
+      numbers[i] = Convert.ToDouble(Console.ReadLine());
+      
+
+  }
+
+  for (int i = 0; i < numbers.Length; i++)
+  {
+      Console.WriteLine(numbers[i]+"," );
+
+  }
+
+double max = 0;
+ 
+ for (int i = 1; i < numbers.Length; i++)
+  {
+      if (numbers[i] > max)
+      {
+          max = numbers[i];
+         
+      }
+  }
+  Console.WriteLine($"Максимальное число: {max}");
+
+  */
