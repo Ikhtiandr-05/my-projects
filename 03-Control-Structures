@@ -1,0 +1,141 @@
+ЗАДАНИЕ 6: Практика с циклами
+1. Создайте цикл, который отображает числа от 10 до 1 (обратный отсчет)
+2. Создайте цикл, который вычисляет сумму чисел от 1 до 100
+3. Спросите у пользователя число и отобразите его таблицу умножения
+4. Создайте игру-угадалку, где пользователь угадывает число от 1 до 10
+*/
+
+
+//Задание 1
+/*
+Console.WriteLine("Считаем от 10 до 1:");
+    for (int i = 10; i >= 1; i--)
+    {
+        Console.WriteLine($"Обратный отсчет с 10 до 1: {i}");
+    }
+                
+}
+*/
+
+//Задание 2
+
+/*
+
+Console.WriteLine("Считаем от 10 до 1:");
+    int summa = 0;
+for (int i = 1; i <= 100; i++)
+{
+    summa = summa + i;
+
+    Console.WriteLine($"Сумма всех чисел: {summa}");
+}
+
+*/
+
+//Задание 3
+
+/*
+Console.WriteLine("Введите число для создание таблицы умножения = ");
+int number = Convert.ToInt16(Console.ReadLine());
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"Таблица умножения числа {number}*{i} = {number*i}");
+
+}
+
+*/
+
+// Задание 4
+/*
+
+int random=new Random().Next(1, 10);
+            
+            Console.Write("Введите число от 1 до 10 = ");
+
+            int number = Convert.ToInt16(Console.ReadLine());
+           
+
+            if (number <=0)
+            {
+                Console.WriteLine("Вы ввели некорректное число. Пожалуйста, введите число от 1 до 10.");
+               
+            }
+            int action = Convert.ToInt32(Console.ReadLine());
+       
+          while(number<=10) 
+            
+            {
+                if (number == 1)
+
+                {
+                    Console.WriteLine("Угадали число");
+                   
+                    break;
+                }
+
+                else if (number == 2)
+
+                {
+                    Console.WriteLine("Угадали число");
+                    
+                    break;
+                }
+                else if (number == 3)
+
+                {
+                    Console.WriteLine("Угадали число");
+                    
+                    break;
+                }
+                else if (number == 4)
+
+                {
+                    Console.WriteLine("Угадали число");
+                   
+                    break;
+                }
+                else if (number == 5)
+
+                {
+                    Console.WriteLine("Угадали число");
+                   
+                    break;
+                }
+                else if (number == 6)
+
+                {
+                    Console.WriteLine("Угадали число");
+                   
+                    break;
+                }
+                else if (number == 7)
+
+                {
+                    Console.WriteLine("Угадали число");
+                   
+                    break;
+                }
+                else if (number == 8)
+
+                {
+                    Console.WriteLine("Угадали число");
+                   
+                    break;
+                }
+                else if (number == 9)
+
+                {
+                    Console.WriteLine("Угадали число");
+                    
+                    break;
+                }
+                else if (number == 10)
+
+                {
+                    Console.WriteLine("Угадали число");
+                   
+                    break;
+                }
+            }
+*/
