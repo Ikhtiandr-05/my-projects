@@ -1,0 +1,131 @@
+ЗАДАНИЕ 7: Создайте свои методы
+1. Создайте метод, который вычисляет квадрат числа
+2. Создайте метод, который проверяет, четное ли число (возвращает bool)
+3. Создайте метод, который конвертирует градусы Цельсия в Фаренгейты
+4. Создайте метод, который находит максимум из трех чисел
+5. Создайте метод, который рисует узор из звездочек (например, треугольник)
+*/
+
+// Задание 1 
+/*
+static int Square(int number)
+{
+    return number * number;
+}
+
+static void Main(string[] args)
+{
+     Console.Write("Введите число для вычисления его квадрата:");
+    int number = Convert.ToInt16(Console.ReadLine());
+
+   Square(number);
+    Console.WriteLine($"Квадрат числа {number} = " + Square(number));
+  
+}
+*/
+
+// Задание 2
+
+/*
+
+static bool chetnoe(int number)
+{
+
+    return number % 2 == 0;
+    Console.WriteLine(true);
+}
+
+  static bool nechtnoe (int number)
+  {
+     
+      return number % 2 == 1;
+       Console.WriteLine(true);
+
+  }
+
+  static void Main(string[] args)
+  {
+       Console.Write("Введите число для определения четности:");
+      int number = Convert.ToInt16(Console.ReadLine());
+
+      if (number == 0) {
+          Console.WriteLine("Число ноль. Введите число больше 0.");
+          return;
+      }
+      else if (chetnoe(number))
+      {
+          Console.WriteLine("Число четное");
+         
+      }
+      else if (nechtnoe(number))
+      {
+          Console.WriteLine("Число нечетное");
+       
+      }
+      else
+      {
+          Console.WriteLine("Ошибка ввода");
+      }
+  }
+
+  */
+
+// Задание 3
+
+/*
+static double CelsiusToFahrenheit(double celsius)
+{
+    return celsius * 9 / 5 + 32;
+}
+
+ static void Main(string[] args)
+ {
+      Console.Write("Введите градусы цельсия для конвертации в Фаренгейты:");
+     double number = Convert.ToInt16(Console.ReadLine());
+
+
+     number=CelsiusToFahrenheit(number);
+     Console.WriteLine(number);
+ }
+ */
+
+ // Задание 4
+
+/*
+ static int MaxOfThree(int number_1, int number_2, int number_3)
+ {
+     if (number_1 > number_2 && number_1 > number_3)
+     {
+         return number_1;
+     }
+     else if (number_2 > number_1 && number_2 > number_3)
+     {
+         return number_2;
+     }
+     else
+     {
+         return number_3;
+     }
+
+ }
+
+     static void Main(string[] args)
+     {
+         Console.Write("Введите 1-число = ");
+         int number_1 = Convert.ToInt16(Console.ReadLine());
+
+         Console.Write("Введите 2-число = ");
+         int number_2 = Convert.ToInt16(Console.ReadLine());
+
+         Console.Write("Введите 3-число = ");
+         int number_3 = Convert.ToInt16(Console.ReadLine());
+    
+     int max = MaxOfThree(number_1, number_2, number_3);
+
+     Console.WriteLine("Максимальное число =" + max);
+
+
+
+     }
+     */
+
